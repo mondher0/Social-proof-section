@@ -1,0 +1,227 @@
+body {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin: 5rem;
+    
+    
+}
+desc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+}
+.desc h1 {
+    width: 250px;
+    color: hsl(300, 43%, 22%);
+    
+}
+.desc p {
+    width: 400px;
+    color:  hsl(333, 80%, 67%);
+    font-weight: bold;
+    line-height: 26px;
+}
+.rates {
+  
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px;
+}
+.rate {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f0f0f0 ;
+    border-radius: 10px;
+    padding: 0px 30px 0px 10px;
+    gap: 5px;
+    
+}
+.rate p {
+    margin-left: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+}
+.rate.a {
+    left: -5em;
+}
+.rate.b {
+    left: -3em;
+}
+i {
+    color: yellowgreen;
+}
+.cartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  
+}
+.cart .title img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    
+}
+.title {
+    display: flex;
+    flex-direction: row;
+  
+    
+    justify-items: center;
+    align-items: center;
+   
+}
+.title p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: hsl(300, 43%, 22%);
+    padding: 15px;
+    border-radius: 10px;
+    
+    
+}
+.cart p {
+    width: 270px;
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+}
+.job {
+    font-weight: normal !important;
+    color: gray !important;
+}
+.cart.b {
+    margin-bottom: -30px;
+}
+.cart.c {
+    margin-bottom: -50px;
+}
+@media (min-width: 730px )and (max-width: 860px) {
+    .rate {
+        position: static;
+       
+       
+    }
+        
+}
+@media (max-width: 729px ) and (min-width: 400px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: center;
+        justify-items: center;
+       
+       
+        
+    }
+    .rate {
+        position: static;
+
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+       
+        
+    }
+    .desc h1 {
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        
+      
+       
+    }
+    .desc p {
+        margin-left: 10px;
+        text-align: center;
+        
+        
+    
+        
+    }
+
+    .cart.b, .cart.c {
+        margin: 0;
+        
+        
+    }
+
+}
+@media (max-width: 399px) {
+   
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: center;
+        justify-items: center;
+       
+       
+        
+    }
+    .rate {
+        position: static;
+
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+       
+        
+    }
+    .desc h1 {
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        
+      
+       
+    }
+    .desc p {
+        margin-left: 10px;
+        text-align: center;
+        width: 100%;
+        
+        
+    
+        
+    }
+   
+
+    .cart.b, .cart.c {
+        margin: 0;
+        
+        
+    }  
+}
